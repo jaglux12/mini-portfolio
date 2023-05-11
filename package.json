@@ -1,0 +1,32 @@
+{
+  "name": "portfolio-jaglux12",
+  "version": "1.0.0",
+  "description": "portfolio de jaglux12",
+  "main": "index.html",
+  "scripts": {
+    "tw:build": "npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jaglux12/mini-portfolio.git"
+  },
+  "keywords": [
+    "html",
+    "js",
+    "css",
+    "portfolio",
+    "jaglux12"
+  ],
+  "author": "jaglux12",
+  "license": "GPL-2.0-only",
+  "bugs": {
+    "url": "https://github.com/jaglux12/mini-portfolio/issues"
+  },
+  "homepage": "https://github.com/jaglux12/mini-portfolio#readme",
+  "devDependencies": {
+    "tailwindcss": "^3.3.2"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^6.4.0"
+  }
+}

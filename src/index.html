@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini portfolio</title>
+
+    <link rel="shortcut icon" href="../assets/svg/profile.svg" type="image/x-icon">
+
+    <link rel="stylesheet" href="../dist/output.css">
+    <link rel="stylesheet" href="../node_modules/@fortawesome/fontawesome-free/css/all.css">
+
+</head>
+<body class="relative dark:bg-black">
+
+    <header class="fixed top-0 w-full z-10 bg-white dark:bg-black">
+
+        <nav class="w-full flex flex-row justify-between pb-2 pt-4 max-sm:px-4 max-md:px-7 max-lg:px-9 max-xl:px-12 max-2xl:px-14">
+
+            <a class="w-12" href="#">
+                <img class="" src="../assets/svg/profile.svg" alt="">
+            </a>
+
+            <button id="bDarkModeM" class="w-12 sm:hidden text-lg text-black dark:text-white dark:bg-white">
+                <i class="fa fa-moon"></i>
+            </button>
+
+            <ul class="flex items-center space-x-3 text-base text-gray-700 max-sm:hidden dark:text-white">
+                <li>
+                    <button id="bDarkMode" class="w-9 text-lg bg-black rounded-full text-white">
+                        <i class="fa fa-moon"></i>
+                    </button>
+                </li>
+                <li>
+                    <a href="#home">
+                        Home
+                    </a>
+                </li>
+                <li>
+                    <a href="#about_me">
+                        About me
+                    </a>
+                </li>
+                <li>
+                    <a href="#works">
+                        Portfolio
+                    </a>
+                </li>
+                <li>
+                    <a href="#skills">
+                        Skills
+                    </a>
+                </li>
+                <li>
+                    <a href="#contact-me">
+                        Contact me
+                    </a>
+                </li>
+            </ul>
+
+            <button type="button" id="bMenu" class="w-12 text-2xl border-black sm:hidden dark:text-white" aria-controls="mobile-menu" aria-expanded="false">
+                <i id="textbMenu" class="fa-solid fa-bars"></i>
+            </button>
+
+        </nav>
+
+        <div class="hidden" id="menuMobile">
+            <div class="grid  grid-rows-3 justify-around content-center align-middle items-center  h-52 p-5 px-8">
+
+                <a class="col-span-3 flex flex-col bg-black text-white p-1 rounded-xl items-center h-12 justify-center text-sm" href=""> 
+                    <button>
+                        <i class="fa-solid fa-house"></i>
+                        Home 
+                    </button>
+                </a>
+
+                <a class="flex flex-col bg-black text-white p-2 rounded-xl items-center w-24 text-sm" href=""> 
+                    <button class="flex flex-col">
+                        <i class="fa-solid fa-user"></i>
+                        About me
+                    </button>
+                </a>
+
+                <a class="flex flex-col bg-black text-white p-2 rounded-xl items-center w-24 text-sm" href=""> 
+                    <button class="flex flex-col">
+                        <i class="fa-solid fa-briefcase"></i>
+                        Portfolio
+                    </button>
+                </a>
+
+                <a class="flex flex-col bg-black text-white p-2 rounded-xl items-center w-24 text-sm" href=""> 
+                    <button class="flex flex-col">
+                        <i class="fa-solid fa-keyboard"></i>
+                        Skills
+                    </button>
+                </a>
+
+                <a class="col-span-2 flex flex-col bg-black text-white p-2 rounded-xl h-12 items-center text-sm" href=""> 
+                    <button class="flex items-center justify-evenly ">
+                        <i class="fa-solid fa-address-book"></i>
+                        Contact me
+                    </button>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main id="home" class="flex max-sm:flex-col-reverse justify-evenly items-center max-sm:px-9 max-sm:items-start max-md:flex-row max-md:px-4 pt-36">
+
+        <h1 class="text-4xl font-bold text-left dark:text-white">
+            <span class="text-2xl max-lg:text-3xl max-2xl:text-2xl">Hi!</span> <br>
+            <span class="max-sm:text-4xl max-md:text-3xl max-lg:text-4xl max-xl:text-5xl max-2xl:text-6xl"> I'm Gonzalo, <br></span>
+            <span class="max-sm:text-3xl max-md:text-2xl max-2xl:text-4xl">Front-End <br> Developer</span>
+        </h1>
+
+        <figure class="flex self-center max-sm:w-72 max-sm:h-72 max-md:w-64 max-md:h-64 bg-profile bg-cover bg-center overflow-hidden rounded-full drop-shadow-lg max-sm:mb-12 max-lg:w-80 max-lg:h-80 max-xl:w-96 max-xl:h-96 max-2xl:w-96 max-2xl:h-96">
+
+        </figure>
+
+    </main>
+
+    <div id="about_me" class="arrow">
+        <i class="fa-solid fa-chevron-down animate-bounce"></i>
+    </div>
+
+    <section  class="flex max-sm:flex-col max-sm:justify-center max-md:justify-evenly max-sm:px-9 py-7 max-md:px-4 max-md:mt-20 max-lg:justify-evenly max-lg:mt-24 max-lg:mb-16 max-xl:mt-36 max-xl:justify-evenly max-xl:mb-20 max-2xl:mb-24 max-2xl:justify-evenly max-2xl:mt-36">
+
+        <figure class="max-sm:m-auto max-sm:mb-5 max-sm:mt-20 rounded-md  overflow-hidden drop-shadow-md">
+            <img src="../assets/img/pc-hacker.gif" alt="">
+        </figure>
+
+        <article class="max-sm:w-full max-md:w-2/4 max-lg:w-2/4 max-xl:w-2/4 max-2xl:w-2/4">
+            <h2 class="max-sm:text-3xl max-md:text-2xl mb-3 font-bold text-blue-700 max-lg:text-2xl max-xl:text-3xl max-2xl:text-4xl dark:text-emerald-500">
+                Learn. Practice. Share. <br>
+                <span class="max-sm:text-2xl max-md:text-xl text-blue-400 dark:text-emerald-900">(and do it again!)</span>
+            </h2>
+            <p class="max-sm:text-sm max-md:text-base max-xl:text-xl max-2xl:text-xl dark:text-white">
+                I love learning new technologies and creating things. Not only websites, but also tools and great user experiences. 
+            </p>
+        </article>
+    </section>
+
+    <div id="works" class="arrow">
+        <i class="fa-solid fa-chevron-down animate-bounce"></i>
+    </div>
+    
+    <section class="flex flex-col max-sm:px-9 max-md:px-4 py-10 space-y-7">
+
+        <h3 class="text-2xl mb-10 text-center dark:text-green-600">
+            Some projects I've been working on...
+        </h3>
+
+        <div class="flex max-sm:items-end max-sm:space-y-5 max-sm:flex-col justify-evenly max-lg:justify-center max-lg:space-x-3 max-xl:justify-center max-xl:space-x-5 max-2xl:justify-center max-2xl:space-x-5">
+
+            <div class="work">
+                <figure class="bg-proyecto-1 w-full h-2/4 bg-cover ">
+    
+                </figure>
+    
+                <div class="p-4 text-white flex flex-col h-2/4 justify-between dark:text-black">
+                    <p class="text-lg font-bold leading-5 mb-3">Interactive Rating Component</p>
+                    <p class="text-base">React & TailwindCSS</p>
+                    <span class="text-sm text-cyan-400 font-bold">#react #tailwind-css #vite</span>
+                    <footer class="mt-3">
+                        <button class="text-lg bg-white p-1 px-3 rounded-lg text-black">
+                            <i class="fa-solid fa-up-right-from-square"></i>
+                        </button>
+                        <button class="text-lg bg-white p-1 px-3 rounded-lg text-black">
+                            <i class="fa-brands fa-github"></i>
+                        </button>
+                    </footer>
+                </div>
+            </div>
+    
+            <div class="work">
+                <figure class="bg-proyecto-1 w-full h-2/4 bg-cover">
+                    
+                </figure>
+    
+                <div class="p-4 text-white flex flex-col h-2/4 justify-between dark:text-black">
+                    <p class="text-lg font-bold leading-5 mb-3">Skilled e-learning</p>
+                    <p class="text-base">HTML, JavaScript & TailwindCSS</p>
+                    <span class="text-sm text-cyan-400 font-bold">#html #tailwind-css #js</span>
+                    <footer class="mt-3">
+                        <button class="text-lg bg-white p-1 px-3 rounded-lg text-black">
+                            <i class="fa-solid fa-up-right-from-square"></i>
+                        </button>
+                        <button class="text-lg bg-white p-1 px-3 rounded-lg text-black">
+                            <i class="fa-brands fa-github"></i>
+                        </button>
+                    </footer>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <div id="skills" class="arrow">
+        <i class="fa-solid fa-chevron-down animate-bounce"></i>
+    </div>
+
+    <section class="max-sm:hidden max-md:p-10 flex flex-col items-center text-white bg-gray-800 max-lg:p-12 max-xl:p-14 max-2xl:p-32 dark:bg-black">
+        <h4 class="text-xl text-center max-2xl:text-3xl max-xl:text-xl dark:text-gray-600">These are some technologies that I currently <br>
+                            handle... if what are looking for is not here, i am <br>
+                            sure <span class="underline underline-offset-4 font-bold dark:text-gray-300">I can learn ir soon!</span>
+        </h4>
+
+        <div class="p-5">
+            <ul class="grid grid-cols-4 text-center text-4xl text-amber-500 space-x-2 justify-center items-center dark:text-emerald-500">
+                <li>
+                    <i class="fa-brands fa-html5"></i>
+                </li>
+                <li>
+                    <i class="fa-brands fa-css3-alt"></i>
+                </li>
+                <li>    
+                    <i class="fa-brands fa-js"></i>
+                </li>
+                <li>
+                    <i class="fa-brands fa-git-alt"></i>
+                </li>
+                <li>
+                    <i class="fa-brands fa-github"></i>
+                </li>   
+                <li>
+                    <i class="fa-brands fa-square-gitlab"></i>
+                </li>
+                <li>
+                    <i class="fa-brands fa-bootstrap"></i>
+                </li>
+                <li>
+                    <i class="fa-brands fa-figma"></i>
+                </li>
+            </ul>
+        </div>
+
+    </section>
+
+    <div id="skills" class="max-sm:hidden bg-gray-800 w-full py-4 flex flex-row justify-center text-white text-4xl dark:bg-black">
+        <i class="fa-solid fa-caret-down animate-bounce"></i>
+    </div>
+
+    <footer class="bg-gray-900 w-full text-white flex max-sm:flex-col items-center max-sm:py-20 max-sm:space-y-10 max-md:py-10 max-md:flex-row max-md:justify-evenly max-lg:justify-evenly max-lg:py-10 max-xl:py-11 max-xl:justify-evenly max-2xl:justify-evenly max-2xl:py-20 dark:bg-emerald-950">
+        
+        <h5 class="max-sm:text-2xl max-md:text-lg font-bold max-lg:text-xl max-xl:text-xl max-2xl:text-2xl">Let's stay in touch</h5>
+
+        <ul class="flex max-sm:space-x-6 max-md:space-x-4 max-sm:text-5xl max-md:text-xl max-lg:text-4xl max-lg:space-x-6 max-xl:text-5xl max-xl:space-x-7 max-2xl:space-x-8 max-2xl:text-6xl">
+            <li>
+                <a href="">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <i class="fa-brands fa-linkedin"></i>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <i class="fa-brands fa-twitter"></i>
+                </a>
+            </li>
+        </ul>
+
+        <figure id="contact-me">
+            <img class="w-40 shadow-sm" src="../assets/svg/profile.svg" alt="">
+        </figure>
+
+    </footer>
+
+    <script src="dark-mode.js"></script>
+    <script src="menu.js"></script>
+</body>
+</html>
