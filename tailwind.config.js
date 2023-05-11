@@ -5,8 +5,12 @@ module.exports = {
     theme: {
         extend: {
             backgroundImage:{
-                'profile':'url(/assets/img/perfil.webp)',
+                'profile':'url(/assets/img/perfil.png)',
                 'proyecto-1':'url(/assets/img/proyecto-1.jpg)',
+            },
+            colors:{
+                'gray-oscuro':'#12131E',
+                'gray-claro-text':'#cacaca'
             }
         },
     },
