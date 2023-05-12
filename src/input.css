@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 .work{
-    @apply bg-gray-oscuro rounded-lg overflow-hidden shadow-lg max-sm:w-full max-md:w-72 max-lg:w-64 max-xl:w-80 max-2xl:w-96 max-2xl:h-96 dark:bg-white dark:text-black
+    @apply bg-gray-oscuro rounded-lg overflow-hidden shadow-lg max-sm:w-full max-md:w-72 max-lg:w-80 max-xl:w-72 max-2xl:w-96 max-2xl:h-96 dark:bg-white dark:text-black
 }
 
 .arrow{
@@ -19,7 +19,7 @@
 }
 
 .fwork{
-    @apply bg-proyecto-1 w-full h-2/4 bg-cover
+    @apply w-full h-2/4 bg-cover bg-center
 }
 
 .navm-buttons{

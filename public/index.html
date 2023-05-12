@@ -6,9 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gonzalo's portfolio</title>
 
-    <link rel="shortcut icon" href="assets/svg/profile.svg" type="image/x-icon">
+    <link rel="shortcut icon" href="/assets/svg/profile.svg" type="image/x-icon">
 
     <link rel="stylesheet" href="styles.css">
+
 
 </head>
 <body class="relative bg-gray-claro-text dark:bg-gray-oscuro">
@@ -18,7 +19,7 @@
         <nav  class="w-full flex flex-row justify-between pb-2 pt-4 max-sm:px-4 max-md:px-7 max-lg:px-9 max-xl:px-12 max-2xl:px-14">
 
             <a class="w-12 bg-gray-oscuro rounded-full h-12 flex justify-center overflow-hidden dark:bg-gray-900 drop-shadow-lg" href="index.html">
-                <img class="" src="assets/img/perfil.png" alt="">
+                <img class="" src="/assets/img/perfil.png" alt="">
             </a>
 
             <button id="bDarkModeM" class="sm:hidden w-12 h-12 text-lg bg-gray-claro-text rounded-full text-gray-oscuro dark:text-gray-claro-text dark:bg-gray-oscuro drop-shadow-lg dark:drop-shadow-lg dark:shadow-white">
@@ -107,7 +108,7 @@
 
     <main id="home" class="flex max-sm:flex-col-reverse justify-evenly items-center max-sm:px-9 max-sm:items-start max-md:flex-row max-md:px-4 pt-36">
 
-        <h1 class="text-4xl font-bold font-sans font-light text-left dark:text-white">
+        <h1 class="text-4xl font-sans font-light text-left dark:text-white">
             <span class="text-2xl max-lg:text-3xl max-2xl:text-2xl">Hi!</span> <br>
             <span class="max-sm:text-4xl max-md:text-3xl max-lg:text-4xl max-xl:text-5xl max-2xl:text-6xl"> I'm <span class="font-bold">Gonzalo</span>,  <br></span>
             <span class="max-sm:text-3xl max-md:text-2xl max-2xl:text-4xl">Front-End <br> Developer</span>
@@ -126,7 +127,7 @@
     <section  class="flex max-sm:flex-col max-sm:justify-center max-md:justify-evenly max-sm:px-9 py-7 max-md:px-4 max-md:mt-20 max-lg:justify-evenly max-lg:mt-24 max-lg:mb-16 max-xl:mt-36 max-xl:justify-evenly max-xl:mb-20 max-2xl:mb-24 max-2xl:justify-evenly max-2xl:mt-36">
 
         <figure class="max-sm:m-auto max-sm:mb-5 max-sm:mt-20 rounded-md  overflow-hidden drop-shadow-md">
-            <img src="assets/img/pc-hacker.gif" alt="">
+            <img src="/assets/img/pc-hacker.gif" alt="">
         </figure>
 
         <article class="max-sm:w-full max-md:w-2/4 max-lg:w-2/4 max-xl:w-2/4 max-2xl:w-2/4">
@@ -144,50 +145,130 @@
         <i class="fa-solid fa-chevron-down animate-bounce"></i>
     </div>
     
-    <section class="flex flex-col max-sm:px-9 max-md:px-4 py-10 space-y-7">
+    <section class="flex flex-col items-center max-sm:px-9 max-md:px-4 py-10 space-y-7">
 
         <h3 class="text-2xl mb-10 text-center dark:text-green-600">
             Some projects I've been working on...
         </h3>
 
-        <div class="flex max-sm:items-end max-sm:space-y-5 max-sm:flex-col justify-evenly max-lg:justify-center max-lg:space-x-3 max-xl:justify-center max-xl:space-x-5 max-2xl:justify-center max-2xl:space-x-5">
+        <div class="grid max-sm:grid-cols-1 max-sm:justify-items-center max-sm:gap-4 max-md:grid-cols-2 max-md:gap-5 max-lg:grid-cols-2 max-lg:gap-7 max-xl:grid-cols-3 max-xl:gap-5 max-2xl:grid-cols-3 max-2xl:gap-6">
 
             <div class="work">
-                <figure class="fwork">
+                <figure class="fwork bg-proyecto-1">
     
                 </figure>
     
                 <div class="wwork">
-                    <p class="text-lg font-bold leading-5 mb-3">Interactive Rating Component</p>
-                    <p class="text-base">React & TailwindCSS</p>
-                    <span class="text-sm text-cyan-400 font-bold">#react #tailwind-css #vite</span>
+                    <p class="text-lg font-bold leading-5">Object positioning</p>
+                    <p class="text-sm">HTML & CSS</p>
+                    <span class="text-sm text-cyan-400 font-bold">#html #css</span>
                     <footer class="mt-3">
-                        <button class="bwork">
-                            <i class="fa-solid fa-up-right-from-square"></i>
-                        </button>
-                        <button class="bwork">
-                            <i class="fa-brands fa-github"></i>
-                        </button>
+                        <a target="_blank" href="https://proyect-1.vercel.app/">
+                            <button class="bwork">
+                                <i class="fa-solid fa-up-right-from-square"></i>
+                            </button>
+                        </a>
+                        <a target="_blank" href="https://github.com/jaglux12/posicionamient-objetos">
+                            <button class="bwork">
+                                <i class="fa-brands fa-github"></i>
+                            </button>
+                        </a>
                     </footer>
                 </div>
             </div>
     
             <div class="work">
-                <figure class="fwork">
+                <figure class="fwork bg-proyecto-2">
                     
                 </figure>
     
                 <div class="p-4 text-gray-claro-text flex flex-col h-2/4 justify-between dark:text-black">
-                    <p class="text-lg font-bold leading-5 mb-3">Skilled e-learning</p>
-                    <p class="text-base">HTML, JavaScript & TailwindCSS</p>
-                    <span class="text-sm text-cyan-400 font-bold">#html #tailwind-css #js</span>
+                    <p class="text-lg font-bold leading-5">3 Column card preview component</p>
+                    <p class="text-sm">HTML & CSS</p>
+                    <span class="text-sm text-cyan-400 font-bold">#html #css</span>
                     <footer class="mt-3">
-                        <button class="bwork">
-                            <i class="fa-solid fa-up-right-from-square"></i>
-                        </button>
-                        <button class="bwork">
-                            <i class="fa-brands fa-github"></i>
-                        </button>
+                        <a target="_blank" href="https://3col-prview-card-component.vercel.app/">
+                            <button class="bwork">
+                                <i class="fa-solid fa-up-right-from-square"></i>
+                            </button>
+                        </a>
+                        <a target="_blank" href="https://github.com/jaglux12/3col-prview-card-component">
+                            <button class="bwork">
+                                <i class="fa-brands fa-github"></i>
+                            </button>
+                        </a>
+                    </footer>
+                </div>
+            </div>
+
+            <div class="work">
+                <figure class="fwork bg-proyecto-3">
+                    
+                </figure>
+    
+                <div class="p-4 text-gray-claro-text flex flex-col h-2/4 justify-between dark:text-black">
+                    <p class="text-lg font-bold leading-5">Product preview card component</p>
+                    <p class="text-sm">HTML & CSS</p>
+                    <span class="text-sm text-cyan-400 font-bold">#html #css</span>
+                    <footer class="mt-3">
+                        <a target="_blank" href="https://proy-2-prodp-card-component.vercel.app/">
+                            <button class="bwork">
+                                <i class="fa-solid fa-up-right-from-square"></i>
+                            </button>
+                        </a>
+                        <a target="_blank" href="https://github.com/jaglux12/prod-prview-card-component">
+                            <button class="bwork">
+                                <i class="fa-brands fa-github"></i>
+                            </button>
+                        </a>
+                    </footer>
+                </div>
+            </div>
+
+            <div class="work">
+                <figure class="fwork bg-proyecto-4">
+                    
+                </figure>
+    
+                <div class="p-4 text-gray-claro-text flex flex-col h-2/4 justify-between dark:text-black">
+                    <p class="text-lg font-bold leading-5">Skilled-elearning</p>
+                    <p class="text-sm">HTML & CSS</p>
+                    <span class="text-sm text-cyan-400 font-bold">#html #css</span>
+                    <footer class="mt-3">
+                        <a target="_blank" href="https://skilled-elearning-roan.vercel.app/">
+                            <button class="bwork">
+                                <i class="fa-solid fa-up-right-from-square"></i>
+                            </button>
+                        </a>
+                        <a target="_blank" href="https://github.com/jaglux12/skilled-elearning">
+                            <button class="bwork">
+                                <i class="fa-brands fa-github"></i>
+                            </button>
+                        </a>
+                    </footer>
+                </div>
+            </div>
+
+            <div class="work">
+                <figure class="fwork bg-proyecto-5">
+                    
+                </figure>
+    
+                <div class="p-4 text-gray-claro-text flex flex-col h-2/4 justify-between dark:text-black">
+                    <p class="text-lg font-bold leading-5">Turismo ITC</p>
+                    <p class="text-sm">HTML, CSS, JavaScript & TailwindCSS</p>
+                    <span class="text-sm text-cyan-400 font-bold">#html #tailwindcss #js #css</span>
+                    <footer class="mt-3">
+                        <a target="_blank" href="https://travel-itc.vercel.app/">
+                            <button class="bwork">
+                                <i class="fa-solid fa-up-right-from-square"></i>
+                            </button>
+                        </a>
+                        <a target="_blank" href="https://github.com/jaglux12/travel-itc">
+                            <button class="bwork">
+                                <i class="fa-brands fa-github"></i>
+                            </button>
+                        </a>
                     </footer>
                 </div>
             </div>
@@ -269,7 +350,7 @@
         </ul>
 
         <figure id="contact-me">
-            <img class="w-40 shadow-sm" src="assets/svg/profile.svg" alt="">
+            <img class="w-40 shadow-sm" src="/assets/svg/profile.svg" alt="">
         </figure>
 
     </footer>

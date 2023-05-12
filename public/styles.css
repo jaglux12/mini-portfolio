@@ -607,10 +607,6 @@ video {
   width: 83.333333%;
 }
 
-.w-56 {
-  width: 14rem;
-}
-
 .w-8 {
   width: 2rem;
 }
@@ -746,6 +742,26 @@ video {
   background-image: url(/assets/img/perfil.png);
 }
 
+.bg-proyecto-1 {
+  background-image: url(/assets/img/proyecto-1.png);
+}
+
+.bg-proyecto-2 {
+  background-image: url(/assets/img/proyecto-2.png);
+}
+
+.bg-proyecto-3 {
+  background-image: url(/assets/img/proyecto-3.png);
+}
+
+.bg-proyecto-4 {
+  background-image: url(/assets/img/proyecto-4.png);
+}
+
+.bg-proyecto-5 {
+  background-image: url(/assets/img/proyecto-5.png);
+}
+
 .bg-cover {
   background-size: cover;
 }
@@ -813,10 +829,6 @@ video {
   font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
-.font-mono {
-  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
-}
-
 .text-2xl {
   font-size: 1.5rem;
   line-height: 2rem;
@@ -853,10 +865,6 @@ video {
 
 .font-light {
   font-weight: 300;
-}
-
-.font-medium {
-  font-weight: 500;
 }
 
 .leading-5 {
@@ -896,11 +904,6 @@ video {
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-
-.text-red-600 {
-  --tw-text-opacity: 1;
-  color: rgb(220 38 38 / var(--tw-text-opacity));
 }
 
 .underline {
@@ -953,13 +956,13 @@ video {
 
 @media not all and (min-width: 1280px) {
   .work {
-    width: 20rem;
+    width: 18rem;
   }
 }
 
 @media not all and (min-width: 1024px) {
   .work {
-    width: 16rem;
+    width: 20rem;
   }
 }
 
@@ -1049,8 +1052,8 @@ video {
 .fwork {
   height: 50%;
   width: 100%;
-  background-image: url(/assets/img/proyecto-1.jpg);
   background-size: cover;
+  background-position: center;
 }
 
 .navm-buttons {
@@ -1188,18 +1191,16 @@ video {
     width: 24rem;
   }
 
-  .max-2xl\:justify-center {
-    justify-content: center;
+  .max-2xl\:grid-cols-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
   .max-2xl\:justify-evenly {
     justify-content: space-evenly;
   }
 
-  .max-2xl\:space-x-5 > :not([hidden]) ~ :not([hidden]) {
-    --tw-space-x-reverse: 0;
-    margin-right: calc(1.25rem * var(--tw-space-x-reverse));
-    margin-left: calc(1.25rem * calc(1 - var(--tw-space-x-reverse)));
+  .max-2xl\:gap-6 {
+    gap: 1.5rem;
   }
 
   .max-2xl\:space-x-8 > :not([hidden]) ~ :not([hidden]) {
@@ -1269,18 +1270,16 @@ video {
     width: 24rem;
   }
 
-  .max-xl\:justify-center {
-    justify-content: center;
+  .max-xl\:grid-cols-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
   .max-xl\:justify-evenly {
     justify-content: space-evenly;
   }
 
-  .max-xl\:space-x-5 > :not([hidden]) ~ :not([hidden]) {
-    --tw-space-x-reverse: 0;
-    margin-right: calc(1.25rem * var(--tw-space-x-reverse));
-    margin-left: calc(1.25rem * calc(1 - var(--tw-space-x-reverse)));
+  .max-xl\:gap-5 {
+    gap: 1.25rem;
   }
 
   .max-xl\:space-x-7 > :not([hidden]) ~ :not([hidden]) {
@@ -1340,18 +1339,16 @@ video {
     width: 20rem;
   }
 
-  .max-lg\:justify-center {
-    justify-content: center;
+  .max-lg\:grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
   .max-lg\:justify-evenly {
     justify-content: space-evenly;
   }
 
-  .max-lg\:space-x-3 > :not([hidden]) ~ :not([hidden]) {
-    --tw-space-x-reverse: 0;
-    margin-right: calc(0.75rem * var(--tw-space-x-reverse));
-    margin-left: calc(0.75rem * calc(1 - var(--tw-space-x-reverse)));
+  .max-lg\:gap-7 {
+    gap: 1.75rem;
   }
 
   .max-lg\:space-x-6 > :not([hidden]) ~ :not([hidden]) {
@@ -1412,12 +1409,20 @@ video {
     width: 16rem;
   }
 
+  .max-md\:grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
   .max-md\:flex-row {
     flex-direction: row;
   }
 
   .max-md\:justify-evenly {
     justify-content: space-evenly;
+  }
+
+  .max-md\:gap-5 {
+    gap: 1.25rem;
   }
 
   .max-md\:space-x-4 > :not([hidden]) ~ :not([hidden]) {
@@ -1504,6 +1509,10 @@ video {
     width: 100%;
   }
 
+  .max-sm\:grid-cols-1 {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+
   .max-sm\:flex-col {
     flex-direction: column;
   }
@@ -1516,12 +1525,16 @@ video {
     align-items: flex-start;
   }
 
-  .max-sm\:items-end {
-    align-items: flex-end;
-  }
-
   .max-sm\:justify-center {
     justify-content: center;
+  }
+
+  .max-sm\:justify-items-center {
+    justify-items: center;
+  }
+
+  .max-sm\:gap-4 {
+    gap: 1rem;
   }
 
   .max-sm\:space-x-6 > :not([hidden]) ~ :not([hidden]) {
@@ -1534,12 +1547,6 @@ video {
     --tw-space-y-reverse: 0;
     margin-top: calc(2.5rem * calc(1 - var(--tw-space-y-reverse)));
     margin-bottom: calc(2.5rem * var(--tw-space-y-reverse));
-  }
-
-  .max-sm\:space-y-5 > :not([hidden]) ~ :not([hidden]) {
-    --tw-space-y-reverse: 0;
-    margin-top: calc(1.25rem * calc(1 - var(--tw-space-y-reverse)));
-    margin-bottom: calc(1.25rem * var(--tw-space-y-reverse));
   }
 
   .max-sm\:px-4 {
