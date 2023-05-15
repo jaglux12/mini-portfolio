@@ -3,120 +3,119 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, viewport-fit=cover, initial-scale=1.0">
     <title>Gonzalo's portfolio</title>
 
-    <link rel="shortcut icon" href="/assets/svg/profile.svg" type="image/x-icon">
+    <link rel="shortcut icon" href="../assets/svg/profile.svg" type="image/x-icon">
 
-    <link rel="stylesheet" href="styles.css">
-
+    <link rel="stylesheet" href="../dist/output.css">
+    <link rel="stylesheet" href="../node_modules/@fortawesome/fontawesome-free/css/all.css">
 
 </head>
 <body class="relative bg-gray-claro-text dark:bg-gray-oscuro">
 
-    <header id="mainNav" class="fixed top-0 w-full z-10 bg-gray-claro-text dark:bg-gray-oscuro ">
+    <header id="mainNav" class="fixed top-0 w-full z-10 bg-transparent dark:bg-gray-oscuro ">
 
-        <nav  class="w-full flex flex-row justify-between pb-2 pt-4 max-sm:px-4 max-md:px-7 max-lg:px-9 max-xl:px-12 max-2xl:px-14">
-
-            <a class="w-12 bg-gray-oscuro rounded-full h-12 flex justify-center overflow-hidden dark:bg-gray-900 drop-shadow-lg" href="index.html">
-                <img class="" src="/assets/img/perfil.png" alt="">
-            </a>
-
-            <button id="bDarkModeM" class="sm:hidden w-12 h-12 text-lg bg-gray-claro-text rounded-full text-gray-oscuro dark:text-gray-claro-text dark:bg-gray-oscuro drop-shadow-lg dark:drop-shadow-lg dark:shadow-white">
-                <i class="fa fa-moon"></i>
-            </button>
-
-            <ul class="flex items-center space-x-3 text-base text-gray-oscuro max-sm:hidden dark:text-white font-sans">
-                <li>
-                    <button id="bDarkMode" class="w-8 h-8 text-lg bg-gray-claro-text rounded-full text-gray-oscuro hover:text-gray-claro-text hover:bg-gray-oscuro dark:text-gray-claro-text dark:bg-gray-oscuro dark:hover:text-gray-oscuro dark:hover:bg-gray-claro-text ">
-                        <i id="tbDarkMode" class="fa fa-moon"></i>
-                    </button>
-                </li>
-                <li>
-                    <a href="#home">
-                        Home
-                    </a>
-                </li>
-                <li>
-                    <a href="#about_me">
-                        About me
-                    </a>
-                </li>
-                <li>
-                    <a href="#works">
-                        Portfolio
-                    </a>
-                </li>
-                <li>
-                    <a href="#skills">
-                        Skills
-                    </a>
-                </li>
-                <li>
-                    <a href="#contact-me">
-                        Contact me
-                    </a>
-                </li>
-            </ul>
-
-            <button type="button" id="bMenu" class="w-12 text-2xl border-black sm:hidden ">
-                <i id="textbMenu" class="fa-solid fa-bars text-gray-oscuro dark:text-gray-claro-text p-3"></i>
-            </button>
-
-        </nav>
-
-        <div class="hidden flex flex-row justify-center sm:hidden" id="menuMobile">
-            <div class="grid grid-rows-3 grid-cols-3 gap-1 w-5/6 justify-around content-center align-middle items-center h-52 p-7 font-sans">
-
-                <a class="col-span-3 navm-buttons" href=""> 
-                    <button>
-                        <i class="fa-solid fa-house"></i>
-                        Home 
-                    </button>
-                </a>
-
-                <a class="col-span-2 navm-buttons" href=""> 
-                    <button class="flex justify-center w-full items-center">
-                        <i class="fa-solid fa-user mx-2"></i>
-                        About me
-                    </button>
-                </a>
-
-                <a class="navm-buttons" href=""> 
-                    <button class="flex flex-col">
-                        <i class="fa-solid fa-briefcase"></i>
-                        Portfolio
-                    </button>
-                </a>
-
-                <a class="navm-buttons" href=""> 
-                    <button class="flex flex-col">
-                        <i class="fa-solid fa-keyboard"></i>
-                        Skills
-                    </button>
-                </a>
-
-                <a class="col-span-2 navm-buttons" href=""> 
-                    <button class="flex items-center justify-evenly ">
-                        <i class="fa-solid fa-address-book mx-2"></i>
-                        Contact me
-                    </button>
+        <nav class="navbar px-10 max-sm:invisible">
+            <div class="flex-1">
+                <a class="w-10 h-10 rounded-full overflow-hidden flex justify-center bg-gray-oscuro shadow-sm">
+                    <img src="../assets/img/perfil.png" alt="">
                 </a>
             </div>
-        </div>
+            <div class="flex-none">
+                <ul class="flex space-x-5 text-base text-gray-oscuro dark:text-gray-claro-text">
+                    <li>
+                        <label class="swap swap-rotate">
+                            <!-- this hidden checkbox controls the state -->
+                            <input id="bDarkMode" type="checkbox" />
+
+                            <i class="fa fa-sun swap-on fill-current text-2xl"></i>
+                            <i class="fa fa-moon swap-off fill-current text-2xl"></i>
+                        </label>
+                    </li>
+                    <li>
+                        <a class="link link-hover" href="index.html">
+                            Home
+                        </a>
+                    </li>
+
+                    <li>
+                        <a class="link link-hover" href="">
+                            About me
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a class="link link-hover" href="">
+                            Portfolio
+                        </a>
+                    </li>
+                    <li>
+                        <a class="link link-hover" href="">
+                            Skills
+                        </a>
+                    </li>
+                    <li>
+                        <a class="link link-hover" href="">
+                            Contact me
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <nav class="sm:invisible">
+            <div class="btm-nav w-11/12 m-auto mb-3 rounded-2xl bg-gray-oscuro text-gray-claro-text dark:bg-gray-claro-text dark:text-gray-oscuro shadow-md">
+                <a class="" href="#home">
+                    <i class="fa-solid fa-house"></i>
+                </a>
+                <a class="#about_me">
+                    <i class="fa-solid fa-user"></i>
+                </a>
+                <button class="dropdown dropdown-top dropdown-end">
+                    <label tabindex="0" class="">
+                        <i class="fa-solid fa-ellipsis"></i>
+                    </label>
+                    <ul tabindex="0" class="dropdown-content menu p-2 shadow bg-gray-oscuro text-gray-claro-text rounded-box w-48 mb-3 dark:bg-gray-claro-text dark:text-gray-oscuro">
+                        <li>
+                            <label class="swap swap-rotate text-sm">
+                                <input id="bDarkModeM" type="checkbox" />
+                                <i class="fa fa-sun swap-on fill-current text-2xl"></i>
+                                <i class="fa fa-moon swap-off fill-current text-2xl"></i>
+                            </label>
+                        </li>
+                        <li>
+                            <a href="#contact-me">
+                                <i class="fa-solid fa-address-book"></i>
+                                Contact me
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#worksm">
+                                <i class="fa-regular fa-id-card"></i>
+                                Portfolio
+                            </a>
+                        </li>
+                    </ul>
+                </button>
+            </div>
+        </nav>
+        
     </header>
 
-    <main id="home" class="flex max-sm:flex-col-reverse justify-evenly items-center max-sm:px-9 max-sm:items-start max-md:flex-row max-md:px-4 pt-36">
+    <main id="home" class="flex max-sm:flex-col-reverse justify-evenly items-center max-sm:px-9 max-sm:items-start max-md:flex-row max-md:px-4 pt-24">
 
-        <h1 class="text-4xl font-sans font-light text-left dark:text-white">
-            <span class="text-2xl max-lg:text-3xl max-2xl:text-2xl">Hi!</span> <br>
-            <span class="max-sm:text-4xl max-md:text-3xl max-lg:text-4xl max-xl:text-5xl max-2xl:text-6xl"> I'm <span class="font-bold">Gonzalo</span>,  <br></span>
-            <span class="max-sm:text-3xl max-md:text-2xl max-2xl:text-4xl">Front-End <br> Developer</span>
+        <h1 class="text-4xl font-sans font-light text-left">
+            <span class="text-2xl max-lg:text-3xl max-2xl:text-2xl text-gray-oscuro dark:text-gray-claro-text">Hi!</span> <br>
+            <span class="max-sm:text-4xl max-md:text-3xl max-lg:text-4xl max-xl:text-5xl max-2xl:text-6xl text-gray-oscuro dark:text-gray-claro-text"> I'm <span class="text-gray-oscuro font-bold dark:text-gray-claro-text">Gonzalo</span>,  <br></span>
+            <span class="max-sm:text-3xl max-md:text-2xl max-2xl:text-4xl text-gray-oscuro dark:text-gray-claro-text">Front-End <br> Developer</span>
         </h1>
 
-        <figure class="flex self-center max-sm:w-72 max-sm:h-72 max-md:w-64 max-md:h-64 bg-profile bg-cover bg-center overflow-hidden rounded-full drop-shadow-lg max-sm:mb-12 max-lg:w-80 max-lg:h-80 max-xl:w-96 max-xl:h-96 max-2xl:w-96 max-2xl:h-96 bg-gray-oscuro dark:bg-gray-900 h-36">
-
-        </figure>   
+        <div class="avatar max-sm:w-full justify-center">
+            <figure class="flex self-center max-sm:w-72 max-sm:h-72 max-md:w-64 max-md:h-64 bg-cover bg-center overflow-hidden rounded-full drop-shadow-lg max-sm:mb-12 max-lg:w-80 max-lg:h-80 max-xl:w-96 max-xl:h-96 max-2xl:w-96 max-2xl:h-96 bg-gray-oscuro dark:bg-gray-900 h-36">
+                <img src="../assets/img/perfil.png"  alt="">
+            </figure> 
+        </div>  
 
     </main>
 
@@ -127,7 +126,7 @@
     <section  class="flex max-sm:flex-col max-sm:justify-center max-md:justify-evenly max-sm:px-9 py-7 max-md:px-4 max-md:mt-20 max-lg:justify-evenly max-lg:mt-24 max-lg:mb-16 max-xl:mt-36 max-xl:justify-evenly max-xl:mb-20 max-2xl:mb-24 max-2xl:justify-evenly max-2xl:mt-36">
 
         <figure class="max-sm:m-auto max-sm:mb-5 max-sm:mt-20 rounded-md  overflow-hidden drop-shadow-md">
-            <img src="/assets/img/pc-hacker.gif" alt="">
+            <img src="../assets/img/pc-hacker.gif" alt="">
         </figure>
 
         <article class="max-sm:w-full max-md:w-2/4 max-lg:w-2/4 max-xl:w-2/4 max-2xl:w-2/4">
@@ -135,7 +134,7 @@
                 Learn. Practice. Share. <br>
                 <span class="max-sm:text-2xl max-md:text-xl text-blue-400 dark:text-emerald-900">(and do it again!)</span>
             </h2>
-            <p class="max-sm:text-sm max-md:text-base max-xl:text-xl max-2xl:text-xl dark:text-white">
+            <p class="text-gray-oscuro max-sm:text-sm max-md:text-base max-xl:text-xl max-2xl:text-xl dark:text-gray-claro-text">
                 I love learning new technologies and creating things. Not only websites, but also tools and great user experiences. 
             </p>
         </article>
@@ -145,132 +144,117 @@
         <i class="fa-solid fa-chevron-down animate-bounce"></i>
     </div>
     
-    <section class="flex flex-col items-center max-sm:px-9 max-md:px-4 py-10 space-y-7">
+    <section id="worksm" class="flex flex-col items-center max-sm:px-9 max-md:px-4 py-10 space-y-7">
 
-        <h3 class="text-2xl mb-10 text-center dark:text-green-600">
+        <h3 class="text-gray-oscuro text-2xl mb-10 text-center dark:text-gray-claro-text">
             Some projects I've been working on...
         </h3>
 
-        <div class="grid max-sm:grid-cols-1 max-sm:justify-items-center max-sm:gap-4 max-md:grid-cols-2 max-md:gap-5 max-lg:grid-cols-2 max-lg:gap-7 max-xl:grid-cols-3 max-xl:gap-5 max-2xl:grid-cols-3 max-2xl:gap-6">
+        <div class="max-sm:carousel max-sm:w-full grid max-md:grid-cols-2 max-md:gap-5 max-lg:grid-cols-2 max-lg:gap-7 max-xl:grid-cols-3 max-xl:gap-5 max-2xl:grid-cols-3 max-2xl:gap-6">
 
-            <div class="work">
-                <figure class="fwork bg-proyecto-1">
-    
+            <div id="slide1" class="carousel-item card relative card-compact w-72 bg-gray-oscuro shadow-sm dark:bg-gray-claro-text dark:text-gray-oscuro">
+                <figure class="">
+                    <img src="../assets/img/proyecto-1.jpg" alt="">
                 </figure>
     
-                <div class="wwork">
-                    <p class="text-lg font-bold leading-5">Object positioning</p>
-                    <p class="text-sm">HTML & CSS</p>
-                    <span class="text-sm text-cyan-400 font-bold">#html #css</span>
-                    <footer class="mt-3">
-                        <a target="_blank" href="https://proyect-1.vercel.app/">
-                            <button class="bwork">
-                                <i class="fa-solid fa-up-right-from-square"></i>
-                            </button>
+                <section class="card-body">
+                    <h4 class="card-title"> Object positioning
+                    </h4>
+                    <p>Animation practice.</p>
+                    <div class="card-actions justify-end">
+                        <a target="_blank" class="btn btn-primary text-xl dark:btn" href="https://github.com/jaglux12/posicionamiento-objetos">
+                            <i class="fa-brands fa-github"></i>
                         </a>
-                        <a target="_blank" href="https://github.com/jaglux12/posicionamient-objetos">
-                            <button class="bwork">
-                                <i class="fa-brands fa-github"></i>
-                            </button>
+
+                        <a target="_blank" class="btn btn-outline text-base" href="https://proyect-1.vercel.app/">
+                            <i class="fa-solid fa-up-right-from-square"></i>
                         </a>
-                    </footer>
-                </div>
-            </div>
-    
-            <div class="work">
-                <figure class="fwork bg-proyecto-2">
-                    
-                </figure>
-    
-                <div class="p-4 text-gray-claro-text flex flex-col h-2/4 justify-between dark:text-black">
-                    <p class="text-lg font-bold leading-5">3 Column card preview component</p>
-                    <p class="text-sm">HTML & CSS</p>
-                    <span class="text-sm text-cyan-400 font-bold">#html #css</span>
-                    <footer class="mt-3">
-                        <a target="_blank" href="https://3col-prview-card-component.vercel.app/">
-                            <button class="bwork">
-                                <i class="fa-solid fa-up-right-from-square"></i>
-                            </button>
-                        </a>
-                        <a target="_blank" href="https://github.com/jaglux12/3col-prview-card-component">
-                            <button class="bwork">
-                                <i class="fa-brands fa-github"></i>
-                            </button>
-                        </a>
-                    </footer>
-                </div>
+                    </div>
+                </section>
             </div>
 
-            <div class="work">
-                <figure class="fwork bg-proyecto-3">
-                    
+            <div id="slide1" class="carousel-item relative card card-compact  w-72 bg-gray-oscuro shadow-sm dark:bg-gray-claro-text dark:text-gray-oscuro">
+                <figure class="">
+                    <img src="../assets/img/proyecto-1.jpg" alt="">
                 </figure>
     
-                <div class="p-4 text-gray-claro-text flex flex-col h-2/4 justify-between dark:text-black">
-                    <p class="text-lg font-bold leading-5">Product preview card component</p>
-                    <p class="text-sm">HTML & CSS</p>
-                    <span class="text-sm text-cyan-400 font-bold">#html #css</span>
-                    <footer class="mt-3">
-                        <a target="_blank" href="https://proy-2-prodp-card-component.vercel.app/">
-                            <button class="bwork">
-                                <i class="fa-solid fa-up-right-from-square"></i>
-                            </button>
+                <section class="card-body">
+                    <h4 class="card-title"> 3 Column card preview component
+                    </h4>
+                    <p>Do you like the cars?</p>
+                    <div class="card-actions justify-end">
+                        <a target="_blank" class="btn btn-primary text-xl dark:btn" href="https://github.com/jaglux12/3col-prview-card-component">
+                            <i class="fa-brands fa-github"></i>
                         </a>
-                        <a target="_blank" href="https://github.com/jaglux12/prod-prview-card-component">
-                            <button class="bwork">
-                                <i class="fa-brands fa-github"></i>
-                            </button>
+
+                        <a target="_blank" class="btn btn-outline text-base" href="https://3col-prview-card-component.vercel.app/">
+                            <i class="fa-solid fa-up-right-from-square"></i>
                         </a>
-                    </footer>
-                </div>
+                    </div>
+                </section>
             </div>
 
-            <div class="work">
-                <figure class="fwork bg-proyecto-4">
-                    
+            <div class="carousel-item card card-compact w-72 bg-gray-oscuro shadow-sm dark:bg-gray-claro-text dark:text-gray-oscuro">
+                <figure class="">
+                    <img src="../assets/img/proyecto-1.jpg" alt="">
                 </figure>
     
-                <div class="p-4 text-gray-claro-text flex flex-col h-2/4 justify-between dark:text-black">
-                    <p class="text-lg font-bold leading-5">Skilled-elearning</p>
-                    <p class="text-sm">HTML & CSS</p>
-                    <span class="text-sm text-cyan-400 font-bold">#html #css</span>
-                    <footer class="mt-3">
-                        <a target="_blank" href="https://skilled-elearning-roan.vercel.app/">
-                            <button class="bwork">
-                                <i class="fa-solid fa-up-right-from-square"></i>
-                            </button>
+                <section class="card-body">
+                    <h4 class="card-title"> Product preview card component
+                    </h4>
+                    <p>Programming course exercise.</p>
+                    <div class="card-actions justify-end">
+                        <a target="_blank" class="btn btn-primary text-xl dark:btn" href="https://github.com/jaglux12/prod-prview-card-component">
+                            <i class="fa-brands fa-github"></i>
                         </a>
-                        <a target="_blank" href="https://github.com/jaglux12/skilled-elearning">
-                            <button class="bwork">
-                                <i class="fa-brands fa-github"></i>
-                            </button>
+
+                        <a target="_blank" class="btn btn-outline text-base" href="https://proy-2-prodp-card-component.vercel.app/">
+                            <i class="fa-solid fa-up-right-from-square"></i>
                         </a>
-                    </footer>
-                </div>
+                    </div>
+                </section>
             </div>
 
-            <div class="work">
-                <figure class="fwork bg-proyecto-5">
-                    
+            <div class="carousel-item card card-compact w-72 bg-gray-oscuro shadow-sm dark:bg-gray-claro-text dark:text-gray-oscuro">
+                <figure class="">
+                    <img src="../assets/img/proyecto-1.jpg" alt="">
                 </figure>
     
-                <div class="p-4 text-gray-claro-text flex flex-col h-2/4 justify-between dark:text-black">
-                    <p class="text-lg font-bold leading-5">Turismo ITC</p>
-                    <p class="text-sm">HTML, CSS, JavaScript & TailwindCSS</p>
-                    <span class="text-sm text-cyan-400 font-bold">#html #tailwindcss #js #css</span>
-                    <footer class="mt-3">
-                        <a target="_blank" href="https://travel-itc.vercel.app/">
-                            <button class="bwork">
-                                <i class="fa-solid fa-up-right-from-square"></i>
-                            </button>
+                <section class="card-body">
+                    <h4 class="card-title"> Skilled-elearning
+                    </h4>
+                    <p>Do you want a template?</p>
+                    <div class="card-actions justify-end">
+                        <a target="_blank" class="btn btn-primary text-xl dark:btn" href="https://github.com/jaglux12/skilled-elearning">
+                            <i class="fa-brands fa-github"></i>
                         </a>
-                        <a target="_blank" href="https://github.com/jaglux12/travel-itc">
-                            <button class="bwork">
-                                <i class="fa-brands fa-github"></i>
-                            </button>
+
+                        <a target="_blank" class="btn btn-outline text-base" href="https://skilled-elearning-roan.vercel.app/">
+                            <i class="fa-solid fa-up-right-from-square"></i>
                         </a>
-                    </footer>
-                </div>
+                    </div>
+                </section>
+            </div>
+
+            <div class="carousel-item card card-compact w-72 bg-gray-oscuro shadow-sm dark:bg-gray-claro-text dark:text-gray-oscuro">
+                <figure class="">
+                    <img src="../assets/img/proyecto-1.jpg" alt="">
+                </figure>
+    
+                <section class="card-body">
+                    <h4 class="card-title"> Turismo ITC
+                    </h4>
+                    <p>Travel page.</p>
+                    <div class="card-actions justify-end">
+                        <a target="_blank" class="btn btn-primary text-xl dark:btn" href="https://github.com/jaglux12/travel-itc">
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+
+                        <a target="_blank" class="btn btn-outline text-base" href="https://travel-itc.vercel.app/">
+                            <i class="fa-solid fa-up-right-from-square"></i>
+                        </a>
+                    </div>
+                </section>
             </div>
 
         </div>
@@ -350,13 +334,12 @@
         </ul>
 
         <figure id="contact-me">
-            <img class="w-40 shadow-sm" src="/assets/svg/profile.svg" alt="">
+            <img class="w-40 shadow-sm" src="../assets/svg/profile.svg" alt="">
         </figure>
 
     </footer>
 
     <script src="dark-mode.js"></script>
     <script src="menu.js"></script>
-    <script src="https://kit.fontawesome.com/71e127b5d0.js" crossorigin="anonymous"></script>
 </body>
 </html>
