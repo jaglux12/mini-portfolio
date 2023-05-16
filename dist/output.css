@@ -3303,12 +3303,20 @@ html {
   position: fixed;
 }
 
+.absolute {
+  position: absolute;
+}
+
 .relative {
   position: relative;
 }
 
 .top-0 {
   top: 0px;
+}
+
+.z-0 {
+  z-index: 0;
 }
 
 .z-10 {
@@ -3339,16 +3347,12 @@ html {
   display: none;
 }
 
-.h-10 {
-  height: 2.5rem;
-}
-
 .h-36 {
   height: 9rem;
 }
 
-.w-10 {
-  width: 2.5rem;
+.h-full {
+  height: 100%;
 }
 
 .w-11\/12 {
@@ -3393,6 +3397,10 @@ html {
 
 .animate-bounce {
   animation: bounce 1s infinite;
+}
+
+.resize {
+  resize: both;
 }
 
 .grid-cols-4 {
@@ -3441,6 +3449,10 @@ html {
   margin-bottom: calc(1.75rem * var(--tw-space-y-reverse));
 }
 
+.self-end {
+  align-self: flex-end;
+}
+
 .self-center {
   align-self: center;
 }
@@ -3459,6 +3471,11 @@ html {
 
 .rounded-md {
   border-radius: 0.375rem;
+}
+
+.bg-black {
+  --tw-bg-opacity: 1;
+  background-color: rgb(0 0 0 / var(--tw-bg-opacity));
 }
 
 .bg-gray-800 {
@@ -4030,10 +4047,6 @@ html {
   background-color: rgb(18 19 30 / var(--tw-bg-opacity));
 }
 
-:is(.dark .dark\:bg-transparent) {
-  background-color: transparent;
-}
-
 :is(.dark .dark\:text-emerald-500) {
   --tw-text-opacity: 1;
   color: rgb(16 185 129 / var(--tw-text-opacity));
@@ -4064,6 +4077,97 @@ html {
   color: rgb(18 19 30 / var(--tw-text-opacity));
 }
 
+@media not all and (min-width: 1680px) {
+  .max-3xl\:mb-32 {
+    margin-bottom: 8rem;
+  }
+
+  .max-3xl\:mt-40 {
+    margin-top: 10rem;
+  }
+
+  .max-3xl\:h-16 {
+    height: 4rem;
+  }
+
+  .max-3xl\:h-96 {
+    height: 24rem;
+  }
+
+  .max-3xl\:w-16 {
+    width: 4rem;
+  }
+
+  .max-3xl\:w-2\/4 {
+    width: 50%;
+  }
+
+  .max-3xl\:w-96 {
+    width: 24rem;
+  }
+
+  .max-3xl\:grid-cols-4 {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
+  .max-3xl\:justify-evenly {
+    justify-content: space-evenly;
+  }
+
+  .max-3xl\:gap-7 {
+    gap: 1.75rem;
+  }
+
+  .max-3xl\:space-x-9 > :not([hidden]) ~ :not([hidden]) {
+    --tw-space-x-reverse: 0;
+    margin-right: calc(2.25rem * var(--tw-space-x-reverse));
+    margin-left: calc(2.25rem * calc(1 - var(--tw-space-x-reverse)));
+  }
+
+  .max-3xl\:p-36 {
+    padding: 9rem;
+  }
+
+  .max-3xl\:py-24 {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+  }
+
+  .max-3xl\:pt-36 {
+    padding-top: 9rem;
+  }
+
+  .max-3xl\:text-2xl {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+
+  .max-3xl\:text-3xl {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+  }
+
+  .max-3xl\:text-4xl {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+  }
+
+  .max-3xl\:text-5xl {
+    font-size: 3rem;
+    line-height: 1;
+  }
+
+  .max-3xl\:text-6xl {
+    font-size: 3.75rem;
+    line-height: 1;
+  }
+
+  .max-3xl\:text-7xl {
+    font-size: 4.5rem;
+    line-height: 1;
+  }
+}
+
 @media not all and (min-width: 1536px) {
   .max-2xl\:mb-24 {
     margin-bottom: 6rem;
@@ -4073,8 +4177,16 @@ html {
     margin-top: 9rem;
   }
 
+  .max-2xl\:h-16 {
+    height: 4rem;
+  }
+
   .max-2xl\:h-96 {
     height: 24rem;
+  }
+
+  .max-2xl\:w-16 {
+    width: 4rem;
   }
 
   .max-2xl\:w-2\/4 {
@@ -4147,8 +4259,16 @@ html {
     margin-top: 9rem;
   }
 
+  .max-xl\:h-14 {
+    height: 3.5rem;
+  }
+
   .max-xl\:h-96 {
     height: 24rem;
+  }
+
+  .max-xl\:w-14 {
+    width: 3.5rem;
   }
 
   .max-xl\:w-2\/4 {
@@ -4211,8 +4331,16 @@ html {
     margin-top: 6rem;
   }
 
+  .max-lg\:h-11 {
+    height: 2.75rem;
+  }
+
   .max-lg\:h-80 {
     height: 20rem;
+  }
+
+  .max-lg\:w-11 {
+    width: 2.75rem;
   }
 
   .max-lg\:w-2\/4 {
@@ -4265,6 +4393,11 @@ html {
     line-height: 2.5rem;
   }
 
+  .max-lg\:text-5xl {
+    font-size: 3rem;
+    line-height: 1;
+  }
+
   .max-lg\:text-xl {
     font-size: 1.25rem;
     line-height: 1.75rem;
@@ -4276,8 +4409,16 @@ html {
     margin-top: 5rem;
   }
 
+  .max-md\:h-10 {
+    height: 2.5rem;
+  }
+
   .max-md\:h-64 {
     height: 16rem;
+  }
+
+  .max-md\:w-10 {
+    width: 2.5rem;
   }
 
   .max-md\:w-2\/4 {
@@ -4332,6 +4473,11 @@ html {
   .max-md\:text-3xl {
     font-size: 1.875rem;
     line-height: 2.25rem;
+  }
+
+  .max-md\:text-4xl {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
   }
 
   .max-md\:text-base {

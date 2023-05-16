@@ -15,8 +15,12 @@ module.exports = {
             colors:{
                 'gray-oscuro':'#12131E',
                 'gray-claro-text':'#cacaca'
+            },
+            screens: {
+                '3xl':'1680px'
             }
         },
+        
     },
     plugins: [require("daisyui")],
 
