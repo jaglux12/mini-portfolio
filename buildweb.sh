@@ -8,6 +8,10 @@ cp src/index.html public/
 cp src/menu.js public/
 cp dist/output.css public/styles.css
 
+cp -r src/js public/
+cp src/menu.js public/
+
+
 echo "Archivos copiados correctamente"
 
 exit

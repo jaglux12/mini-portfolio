@@ -17,7 +17,9 @@ module.exports = {
                 'gray-claro-text':'#cacaca'
             },
             screens: {
-                '3xl':'1680px'
+                '3xl':'1680px',
+                '4xl':'1850px',
+                '5xl':'1920px'
             }
         },
         
