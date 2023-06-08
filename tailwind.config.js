@@ -5,13 +5,6 @@ module.exports = {
     theme: {
         extend: {
             backgroundImage:{
-                /*'profile':'url(/assets/img/perfil.png)',
-                'proyecto-1':'url(/assets/img/proyecto-1.png)',
-                'proyecto-2':'url(/assets/img/proyecto-2.png)',
-                'proyecto-3':'url(/assets/img/proyecto-3.png)',
-                'proyecto-4':'url(/assets/img/proyecto-4.png)',
-                'proyecto-5':'url(/assets/img/proyecto-5.png)' */
-
                 'profile':'url(https://i.postimg.cc/sg1XqV7q/perfil.png)',
                 'proyecto-1':'url(https://i.postimg.cc/MGCv1hc4/proyecto-1.png)',
                 'proyecto-2':'url(https://i.postimg.cc/MHxHFVmm/proyecto-2.png)',
